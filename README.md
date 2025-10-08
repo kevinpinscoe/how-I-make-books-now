@@ -15,32 +15,29 @@ I use Pandoc for the compilation. https://pandoc.org/
 
 # Organization
 
-Often when I start a book I am initially unsure what
-chapters I will be creating or in what order they will be in. I can change this easily by either using Linux symlinks
-or moving content around the folders.
+Often when I start a book I am initially unsure what chapters I will be creating or in what order 
+they will be in. I can change this easily by either using Linux symlinks or moving content around the folders.
 
-Content folders are named by their purpose (intro, toc, index, chapter, etc.) in alpha-numeric order rather than with a title or content for purposes of sort ordering. The chapter title will go into the Markdown.
+This is whee the Manifest file comes in.
 
-/home/directory/mybooks/book-name (book name is likely a working title)
+This fle maintains the order in which I want chapters and sections published.
 
 build.sh - Builds everything using Pandoc
+
 contents - The root directory of the contents of the books
+
 metadata.yaml - Metadata to be passed to Pandoc when converting to PDF based on the Pandoc template in my case always latex. See command `pandoc -D latex`.
 
 Under contents I structure this way:
 
-01-intro  chap01  chap02  chap03  chap04  chap05
+01-intro  chap01  chap02  chap03  chap04  chap05 zz-appendices
 
-Under each of thee folders which again is in sort order [0-9a-z]
+This just makes it easier to find in VSCode File Explorer (in alphabetical order).
 
-01-intro-part-01.md  01-intro-part-03.md  01-intro-part-05.md
-01-intro-part-02.md  01-intro-part-04.md
+The manifest dictates the order of the section and chapter files. 
 
-If you look at build.sh you can see all this gets sourced in the proper order.
-
-Markdown does not really have include statements so this is the way I have sorted it out.
+I use https://github.com/kevinpinscoe/line-reorder-gui to visually rearrange my section pages by file name.
 
 There are many other tools out there to solve this problem such as https://github.com/knennigtri/merge-markdown but this works for my simple needs.
 
 The result is a PDF in the root directory /mybooks/[book-name].
-
