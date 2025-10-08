@@ -1,0 +1,3 @@
+# This is Chapter 3
+
+This is the first part of Chapter 3 ...

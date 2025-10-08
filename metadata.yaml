@@ -1,0 +1,35 @@
+---
+title: "A Small Book about Making Books"
+subtitle: "I hope you enjoy making books like I have"
+author:
+  - "Kevin P. Inscoe"
+  - "https://github.com/kevinpinscoe"
+lang: en-US
+date: ""
+keywords: ["markdown", "pandoc", "book", "publishing", "pdf"]
+subject: "Book"
+
+# PDF/LaTeX variables
+papersize: A4
+fontsize: 11pt
+geometry:
+  - margin=1in
+
+# Fonts (XeLaTeX)
+mainfont: "TeX Gyre Pagella"
+monofont: "TeX Gyre Cursor"
+
+# Links
+colorlinks: true
+linkcolor: blue
+urlcolor: blue
+
+# TOC/numbering (you can keep them on the CLI if you prefer—don’t duplicate both)
+toc: true
+toc-depth: 1
+number-sections: false
+
+documentclass: book
+classoption:
+  - openany          # or "openright" if you want blank left pages
+---
