@@ -1,12 +1,19 @@
+# Title pages
 contents/00-title/00-title-page.md
+# Intro pages
 contents/01-intro/intro.md
 contents/01-intro/audience.md
 contents/01-intro/who-i-am.md
 contents/01-intro/what-i-will-outline.md
 contents/01-intro/finally.md
+# Chapter 1
 contents/chap01/chap01-section-01.md
 contents/chap01/chap01-section-02.md
+# Chapter 2
 contents/chap02/chap02-section-01.md
+# Chapter 3
 contents/chap03/chap03-section-01.md
+# Chapter 4
 contents/chap04/chap04-section-01.md
+# Chapter 5
 contents/chap05/chap05-section-01.md

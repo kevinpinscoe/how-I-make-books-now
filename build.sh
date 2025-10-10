@@ -2,7 +2,10 @@
 
 OUT="a_book_about_making_books.pdf"
 
-mapfile -t FILES < contents/manifest.txt
+mapfile -t FILES < <(
+  sed -E 's/[[:space:]]*#.*$//' contents/manifest.txt |   # drop inline + full-line comments
+  sed -E '/^[[:space:]]*$/d'                              # drop blank lines
+)
 
 # Create debug file
 pandoc --metadata-file=metadata.yaml \
