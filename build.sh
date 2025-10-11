@@ -28,7 +28,7 @@ pandoc \
   "${FILES[@]}"
 
 # https://github.com/markdownlint/markdownlint
-mdl contents/
+mdl -s mybook-mdl_style.rb contents/
 
 ls -lh $OUT
 
