@@ -27,6 +27,9 @@ pandoc \
   -V classoption=openany \
   "${FILES[@]}"
 
+# https://github.com/markdownlint/markdownlint
+mdl contents/
+
 ls -lh $OUT
 
 pdfinfo ${OUT} | grep Pages
