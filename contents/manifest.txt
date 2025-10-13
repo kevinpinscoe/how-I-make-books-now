@@ -17,3 +17,7 @@ contents/chap03/chap03-section-01.md
 contents/chap04/chap04-section-01.md
 # Chapter 5
 contents/chap05/chap05-section-01.md
+# Appendices
+contents/zzzz-appendices/00-appendix-title.md
+contents/zzzz-appendices/01-appendix.md
+contents/zzzz-appendices/02-appendix.md
